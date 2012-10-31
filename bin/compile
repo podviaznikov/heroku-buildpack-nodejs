@@ -160,9 +160,11 @@ PATH="$BUILD_DIR/bin:$PATH"
 echo "-----> Vendoring node into slug"
 mkdir -p "$BUILD_DIR/bin"
 mkdir -p "$BUILD_DIR/lib"
+mkdir -p "$BUILD_DIR/include"
 cp "$VENDORED_NODE/bin/node" "$BUILD_DIR/bin/node"
 cp "$VENDORED_NODE/bin/node-waf" "$BUILD_DIR/bin/node-waf"
 cp -r "$VENDORED_NODE/lib/node" "$BUILD_DIR/lib/"
+cp -r "$VENDORED_NODE/include/node" "$BUILD_DIR/include/"
 
 # setting up paths for building
 PATH="$VENDORED_SCONS:$VENDORED_NODE/bin:$PATH"
