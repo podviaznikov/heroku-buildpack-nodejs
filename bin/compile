@@ -161,6 +161,7 @@ echo "-----> Vendoring node into slug"
 mkdir -p "$BUILD_DIR/bin"
 cp "$VENDORED_NODE/bin/node" "$BUILD_DIR/bin/node"
 cp "$VENDORED_NODE/bin/node-waf" "$BUILD_DIR/bin/node-waf"
+ls -last $VENDORED_NODE/lib
 cp "$VENDORED_NODE/lib/wafadmin" "$BUILD_DIR/lib/"
 
 # setting up paths for building
