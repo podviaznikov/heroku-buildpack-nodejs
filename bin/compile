@@ -159,6 +159,7 @@ package_download "scons" "${SCONS_VERSION}" "${VENDORED_SCONS}"
 PATH="$BUILD_DIR/bin:$PATH"
 echo "-----> Vendoring node into slug"
 mkdir -p "$BUILD_DIR/bin"
+mkdir -p "$BUILD_DIR/lib"
 cp "$VENDORED_NODE/bin/node" "$BUILD_DIR/bin/node"
 cp "$VENDORED_NODE/bin/node-waf" "$BUILD_DIR/bin/node-waf"
 ls -last $VENDORED_NODE/lib
