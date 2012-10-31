@@ -162,7 +162,7 @@ mkdir -p "$BUILD_DIR/bin"
 mkdir -p "$BUILD_DIR/lib"
 cp "$VENDORED_NODE/bin/node" "$BUILD_DIR/bin/node"
 cp "$VENDORED_NODE/bin/node-waf" "$BUILD_DIR/bin/node-waf"
-ls -last $VENDORED_NODE/lib
+find $VENDORED_NODE/lib/node
 cp "$VENDORED_NODE/lib/node/" "$BUILD_DIR/lib/"
 
 # setting up paths for building
